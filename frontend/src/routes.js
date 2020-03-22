@@ -1,5 +1,6 @@
 import Home from "./components/Home";
 import About from "./components/About";
+import MyAccount from "./components/MyAccount";
 import Login from "./components/Login";
 
 export const ROUTES = {
@@ -18,7 +19,7 @@ export const ROUTES = {
   },
   account: {
     path: "/account",
-    component: () => "Placeholder account"
+    component: MyAccount
   },
   selfevaluation: {
     path: "/self-evaluation",
