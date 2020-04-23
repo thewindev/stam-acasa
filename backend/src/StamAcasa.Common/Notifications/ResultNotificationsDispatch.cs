@@ -107,6 +107,8 @@ namespace StamAcasa.Common.Notifications
         {
             var countyDistribution = _countyEmailDistribution.CountyDistributions
                                 .FirstOrDefault(c => c.County == county);
+            if (countyDistribution == null)
+                return null;
             var countyEmailData = new ResultsNotificationEmailData
             {
                 EmailList = countyDistribution.EmailList,
